@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+</head>
+<body>
+<div class="container">
+
+    <form id="form">
+        <div class="form">
+            <div class="form-line">
+                <label for="cats">Количество котов:</label>
+                <input class="unset-input input" type="number" id="cats" min="0" value="0">
+            </div>
+            <div class="form-line">
+                <label for="food">Количество еды для 1 кота:</label>
+                <input class="unset-input input" type="number" id="food" min="0" value="0">
+            </div>
+            <div class="form-line">
+                <label for="food-bowl">Количество еды в миске:</label>
+                <input class="unset-input input" type="number" id="food-bowl" min="0" value="0">
+            </div>
+            <div class="form-line">
+                <label for="fill-in-bowl">Время на заполнение миски (в секундах):</label>
+                <input class="unset-input input" type="number" id="fill-in-bowl" min="0" value="0">
+            </div>
+            <div class="form-line">
+                <label for="eat-food">Время на поедание котом порции (в секундах): </label>
+                <input class="unset-input input" type="number" id="eat-food" min="0" value="0">
+            </div>
+            <button type="submit" class="ax-button btn">Начать кормить котов!</button>
+        </div>
+    </form>
+<div id="root"></div>
+</div>
+<script type="module" src="/main.js"></script>
+</body>
+</html>

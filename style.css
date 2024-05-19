@@ -1,0 +1,129 @@
+:root {
+  --main-back-color: #1E1E1E;
+  --accent-back-color: #2C2C2C;
+  --main-text-color: #E9E9E9;
+  --add-text-color: #B4B4C0;
+  --accent-text-color: #008697;
+  --accent-color-violet: #4C3F78;
+  --accent-color-orange: #B85526;
+}
+
+* {
+  box-sizing: border-box;
+  background-color: var(--main-back-color);
+  color: var(--add-text-color);
+  font-family: system-ui;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1220px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
+.ax-button {
+  all: unset;
+  outline: revert;
+  box-sizing: border-box;
+}
+
+.btn {
+  width: fit-content;
+  background-color: var(--accent-color-violet);
+  color: var(--main-text-color);
+  border-radius: 5px;
+  padding-inline: 15px;
+  padding-block: 10px;
+  margin-top: 20px;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--accent-text-color);
+  cursor: pointer;
+}
+
+.unset-input {
+  all: unset;
+  outline: revert;
+  box-sizing: border-box;
+}
+
+.input {
+  background-color: var(--accent-back-color);
+  color: var(--add-text-color);
+  padding-block: 10px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 0.5px solid var(--accent-back-color);
+}
+
+.input:hover {
+  border: 0.5px solid var(--accent-color-violet);
+}
+
+.input:focus {
+  outline: 1px solid var(--accent-color-violet);
+  background-color: var(--accent-back-color);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0.5px solid var(--accent-back-color);
+  -webkit-text-fill-color: var(--add-text-color);
+  -webkit-box-shadow: var(--accent-back-color);
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+  .form {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 500px;
+    margin-inline: auto;
+    margin-block: 40px;
+  }
+
+
+.form-line  {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 400px 100px;
+  align-items: center;
+}
+
+.btn:disabled {
+  background-color: var(--accent-back-color);
+  color: var(--add-text-color);
+  cursor: default;
+}
+
+#root {
+  width:500px;
+  margin-inline: auto;
+}
+
+.warning {
+  color: var(--accent-color-orange)
+}
+
+.resulting-time {
+  color: var(--accent-color-violet);
+}
+
+.complete-message {
+  color: var(--accent-text-color)
+}
