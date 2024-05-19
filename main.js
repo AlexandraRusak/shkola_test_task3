@@ -51,10 +51,8 @@ function feedCats() {
                 if (amountLeft < amountForCat&&fedCats<cats) {
                     addHTML('<p>Бабушка начала наполнять миску.</p>')
                     isOldLadyFilling = true
-                    // lastEventBegin = time
                     lastEventBegin = (lastEventBegin + eatFood)
                 } else if (amountForCat>=amountLeft&&fedCats<cats) {
-                    // currentCat = fedCats
                     addHTML(`<p>Кот №${currentCat} подошел к миске.</p>`)
                     isCatEating = true
                     lastEventBegin = (lastEventBegin + eatFood)
@@ -64,12 +62,10 @@ function feedCats() {
         if (isOldLadyFilling) {
             if ((lastEventBegin + fillInBowl) < time) {
                 addHTML('<p>Бабушка закончила наполнять миску.</p>')
-                // lastEventBegin = time
                 lastEventBegin = (lastEventBegin + fillInBowl)
                 amountLeft = amountInBowl
                 isOldLadyFilling = false
                 isCatEating = true
-                // currentCat = fedCats
                 addHTML(`<p>Кот №${currentCat} подошел к миске.</p>`)
             }
         }
